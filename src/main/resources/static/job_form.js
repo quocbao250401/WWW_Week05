@@ -21,7 +21,7 @@ async function fetchData(url){
 async function addSkill(){
     const allDivSkill = document.querySelectorAll("[id^='divSkill']")
     const divSkillCount = allDivSkill.length
-    const skills = await fetchData("http://localhost:8080/api/v1/skills")
+    const skills = await fetchData("http://localhost:8090/api/v1/skills")
     const htmlSkill = `
                 <div class="form-inline pb-2 border-bottom border-4" id="divSkill${divSkillCount}">
                     <input type="hidden" name="skillId" value="0"/>
